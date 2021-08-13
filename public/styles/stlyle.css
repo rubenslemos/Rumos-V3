@@ -32,18 +32,17 @@
     }
     
     .hamburger {
-        /* background-color: red; */
         width: 2rem;
         height: 2rem;
         position: fixed;
-        z-index: 100;
-        right: 2rem;
-        top: 2rem;
+        z-index: 151;
+        top: 0.7rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         cursor: pointer;
         transition: .9s, forwards .2s;
+        left: 0.7rem;
     }
     
     .show-menu .hamburger {
@@ -65,7 +64,7 @@
     }
     
     .show-menu #line1 {
-        transform: rotate(45deg) translate(.5rem, .55rem);
+        transform: rotate(45deg) translate(.2rem, .55rem);
         background-color: rgb(56, 129, 172);
         border: solid .5px rgb(56, 129, 172);
         box-shadow: none;
@@ -77,7 +76,7 @@
     }
     
     .show-menu #line3 {
-        transform: rotate(-45deg) translate(.2rem, -.3rem);
+        transform: rotate(-45deg) translate(.2rem, -.6rem);
         background-color: rgb(56, 129, 172);
         border: solid .5px rgb(56, 129, 172);
         box-shadow: none;
@@ -217,27 +216,29 @@
     }
     
     .sidebar {
-        width: 20rem;
-        height: 100vh;
+        width: 117%;
+        height: 6%;
         background-color: var(--cor-fundo);
         /* background-color: #ffffff; */
         position: fixed;
-        top: 0;
+        top: -4rem;
         right: -20rem;
         transition: 1s;
         z-index: 150;
     }
     
     .show-menu .sidebar {
-        right: 0;
+        top: 0rem;
     }
     
     .menu {
         width: 95%;
         position: absolute;
-        top: 40%;
-        left: 50%;
+        top: 71%;
+        left: 49%;
         transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: right;
     }
     
     .menu-item {
@@ -259,12 +260,12 @@
     }
     
     .social-media {
-        /* background-color: red; */
         position: absolute;
-        bottom: 2rem;
+        bottom: 0.5rem;
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        left: 45rem;
     }
     
     .social-media i {

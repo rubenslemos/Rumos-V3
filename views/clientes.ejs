@@ -1,0 +1,39 @@
+<section class="sessao-clientes" id="clientes">
+    <div class="clientes-wrapper">
+        <form action="/add" method="POST" id="cliente">
+            <h1>Cadastro de Clientes</h1>
+            <div class="inputs">
+                <input type="text" placeholder="Nome:" name="nome" required>
+                <p class="email">
+                    <input class="email" type="text" placeholder="E-mail:" name="email" required>
+                    <input class="interna2" type="text" placeholder="CPF:" name="cpf" required></p>
+                <p class="interna">
+                    <input class="interna" type="text" placeholder="Telefone:" name="telefone" required>
+                    <input class="interna" type="date" placeholder="Nascimento:" name="nascimento" required>
+                    <input class="interna2" type="text" placeholder="Sexo:" name="sexo" required>
+                </p>
+                <input type="text" placeholder="Endereço:" name="endereco" required>
+                <p class="interna">
+                    <input class="interna" type="text" placeholder="Cidade:" name="cidade" required>
+                    <input class="interna" type="text" placeholder="Estado:" name="estado" required>
+                    <input class="interna2" type="text" placeholder="CEP:" name="cep" required></p>
+                <p class="password">
+                    <input class="password" type="password" placeholder="Senha:" name="senha" required>
+                    <input class="password2" type="password" placeholder="Confirmar Senha:" name="confirma" required>
+                </p>
+            </div>
+        </form>
+        <div class="button">
+            <p class="button">
+                <button class="btn button">Novo</button>
+                <button class="btn button" type="submit" id="salvarContato" form="cliente">salvar</button>
+                <button class="btn button">Anterior</button>
+            </p>
+            <p class="button">
+                <button class="btn button">Proximo</button>
+                <button class="btn button">Excluir</button>
+                <button class="btn button">Listar Clientes</button>
+            </p>
+        </div>
+    </div>
+</section>
