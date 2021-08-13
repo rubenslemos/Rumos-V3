@@ -53,12 +53,6 @@ const Usuarios = database.sequelize.define('usuarios', {
         },
         cep: {
             type: database.Sequelize.FLOAT
-        },
-        senha: {
-            type: database.Sequelize.STRING
-        },
-        confirma: {
-            type: database.Sequelize.STRING
         }
     })
     // Usuarios.sync({ Force: true })

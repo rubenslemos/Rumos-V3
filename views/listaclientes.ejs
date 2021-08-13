@@ -1,0 +1,41 @@
+<section class="sessao-clientes" id="clientes">
+    <div class="clientes-wrapper">
+        <% readuser.forEach(function(details) {%>
+            <p>Usuario:
+                <%= readuser.nome %>
+            </p>
+            <% } )%>
+                <p>email:
+                    <%= readuser.email %>
+                </p>
+                <p>CPF:
+                    <%= readuser.cpf %>
+                </p>
+                <p>Telefone:
+                    <%= readuser.telefone %>
+                </p>
+                <p>Nascimento:
+                    <%= readuser.nascimento %>
+                </p>
+                <p>Sexo:
+                    <%= readuser.sexo %>
+                </p>
+                <p>Endereço:
+                    <%= readuser.endereco %>
+                </p>
+                <p>Cidade:
+                    <%= readuser.cidade %>
+                </p>
+                <p>Estado:
+                    <%= readuser.estado %>
+                </p>
+                <p>CEP:
+                    <%= readuser.cep %>
+                </p>
+                <div class="button">
+                    <p class="button">
+                        <a href="/clientes"><button class="btn button">Voltar</button></a>
+                    </p>
+                </div>
+    </div>
+</section>

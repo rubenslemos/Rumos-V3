@@ -1,14 +1,13 @@
 const express = require('express')
 const read = require('./CreateTables')
 const readpost = (req, res) => {
-    read.Postagem.findAll().then((postagem) => {
+    read.Orcamento.findAll().then((postagem) => {
         res.render('post', { postagem: postagem })
     })
 }
 const readuser = (req, res) => {
-    read.Usuario.findAll().then((users) => {
-        res.render('usercad', { users: users })
-    })
+    read.Usuarios.findAll()
+        //.then((readuser) => {res.render('/listaclientes', { readuser: readuser })})
 }
 module.exports = {
     readpost: readpost,

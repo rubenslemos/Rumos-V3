@@ -25,33 +25,29 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link"><i class="fas fa-home"></i> Início</a></li>
-                    <li class="menu-item"><a href="#conhecimentos" class="menu-link"><i class="fas fa-book"></i> Conhecimento</a></li>
-                    <li class="menu-item"><a href="#clientes" class="menu-link"><i class="fas fa-address-book"></i> Cadastro de Clientes</a></li>
-                    <li class="menu-item"><a href="#contato" class="menu-link"><i class="fas fa-envelope-open"></i> Contato</a></li>
-                    <li class="menu-item"><a href="#orcamento" class="menu-link"><i class="fas fa-wallet"></i> Orçamento</a></li>
+                    <li class="menu-item"><a href="/" class="menu-link"><i class="fas fa-home"></i> Início</a></li>
+                    <li class="menu-item"><a href="/conhecimento" class="menu-link"><i class="fas fa-book"></i> Conhecimento</a></li>
+                    <li class="menu-item"><a href="/clientes" class="menu-link"><i class="fas fa-address-book"></i> Clientes</a></li>
+                    <li class="menu-item"><a href="/contato" class="menu-link"><i class="fas fa-envelope-open"></i> Contato</a></li>
+                    <li class="menu-item"><a href="/orcamento" class="menu-link"><i class="fas fa-wallet"></i> Orçamento</a></li>
                 </ul>
             </nav>
-            <div class="social-media">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-discord"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
         </aside>
-        <footer>
-            <div class="footer-content">
-                <p>
-                    Copyright &copy; 2021, ETECIA DS - Todos direitos reservados
-                </p>
-                <div class="social-list">
-                    <ul>
-                        <li><a href="#"><i class="fab fa-github"></i></a></li>
-                        <li><a href="#"><i class="fab fa-discord"></i></a></li>
-                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                    </ul>
+        <%-include(`${page}`)%>
+            <footer>
+                <div class="footer-content">
+                    <p>
+                        Copyright &copy; 2021, ETECIA DS - Todos direitos reservados
+                    </p>
+                    <div class="social-list">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                            <li><a href="#"><i class="fab fa-discord"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
     </div>
 </body>
 <script src="/script.js"></script>

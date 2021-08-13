@@ -6,6 +6,7 @@
         "deleteuser",
         "endereco",
         "insertdb",
+        "listaclientes",
         "maodeobra",
         "readpost",
         "readuser",
