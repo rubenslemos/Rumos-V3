@@ -1,41 +1,58 @@
 <section class="sessao-clientes" id="clientes">
-    <div class="clientes-wrapper">
-        <% readuser.forEach(function(details) {%>
-            <p>Usuario:
-                <%= readuser.nome %>
-            </p>
-            <% } )%>
-                <p>email:
+    <div class="clientes-wrapper listaclientes">
+        <% readuser.forEach( readuser => {%>
+            <div class="listaclientes">
+                <p>
+                    Usuario:
+                    <%= readuser.nome %>
+                </p>
+                <p>
+                    email:
                     <%= readuser.email %>
                 </p>
-                <p>CPF:
+                <p>
+                    CPF:
                     <%= readuser.cpf %>
                 </p>
-                <p>Telefone:
+            </div>
+            <div class="listaclientes">
+                <p>
+                    Telefone:
                     <%= readuser.telefone %>
                 </p>
-                <p>Nascimento:
+                <p>
+                    Nascimento:
                     <%= readuser.nascimento %>
                 </p>
-                <p>Sexo:
+                <p>
+                    Sexo:
                     <%= readuser.sexo %>
                 </p>
-                <p>Endereço:
+            </div>
+            <div class="listaclientes">
+                <p>
+                    Endereço:
                     <%= readuser.endereco %>
                 </p>
-                <p>Cidade:
+                <p>
+                    Cidade:
                     <%= readuser.cidade %>
                 </p>
-                <p>Estado:
+                <p>
+                    Estado:
                     <%= readuser.estado %>
                 </p>
-                <p>CEP:
+                <p>
+                    CEP:
                     <%= readuser.cep %>
+                        <% } )%>
                 </p>
-                <div class="button">
-                    <p class="button">
-                        <a href="/clientes"><button class="btn button">Voltar</button></a>
-                    </p>
-                </div>
+            </div>
+            <br>
+            <div class="button">
+                <p class="button">
+                    <a href="/clientes"><button class="btn button">Voltar</button></a>
+                </p>
+            </div>
     </div>
 </section>

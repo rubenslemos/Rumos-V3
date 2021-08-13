@@ -1,0 +1,44 @@
+<section class="sessao-clientes" id="clientes">
+    <div class="clientes-wrapper listaclientes">
+        <% readorca.forEach( readorca => {%>
+            <div class="listaorcamento">
+                <p>
+                    Peca:
+                    <%= readorca.peca %>
+                </p>
+                <p>
+                    Preco de Compra:
+                    <%= readorca.compras %>
+                </p>
+                <p>
+                    Quantidade:
+                    <%= readorca.quantidade %>
+                </p>
+                <p>
+                    lucro %:
+                    <%= readorca.lucro %>
+                </p>
+                <p>
+                    Preço Venda:
+                    <%= readorca.venda %>
+                </p>
+                <p>
+                    Custo de mão de obra:
+                    <%= readorca.maodeobra %>
+                </p>
+                <p>
+                    Serviço Incluso:
+                    <%= readorca.servicos %>
+                </p>
+                <p>
+                    <% } )%>
+                </p>
+            </div>
+            <br>
+            <div class="button">
+                <p class="button">
+                    <a href="/orcamento"><button class="btn button">Voltar</button></a>
+                </p>
+            </div>
+    </div>
+</section>

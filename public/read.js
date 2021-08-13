@@ -1,15 +1,12 @@
 const express = require('express')
 const read = require('./CreateTables')
-const readpost = (req, res) => {
-    read.Orcamento.findAll().then((postagem) => {
-        res.render('post', { postagem: postagem })
-    })
-}
-const readuser = (req, res) => {
-    read.Usuarios.findAll()
-        //.then((readuser) => {res.render('/listaclientes', { readuser: readuser })})
-}
 module.exports = {
-    readpost: readpost,
-    readuser: readuser
+    async readorca(req, res) {
+        readorca = await read.Orcamento.findAll().then((readorca) => res.render("index", { page: 'listaorcamento', readorca: readorca }))
+
+    },
+    async readuser(req, res) {
+        readuser = await read.Usuarios.findAll().then((readuser) => res.render("index", { page: 'listaclientes', readuser: readuser }))
+
+    }
 }
