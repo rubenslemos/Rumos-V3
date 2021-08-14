@@ -1,25 +1,25 @@
 const express = require('express')
 const insert = require('./CreateTables')
+const read = require('./read')
 const route = require('./route')
-const deletepost = (req, res) => {
-    insert.Orcamento.destroy({
-        where: { 'id': req.params.id }
-    }).then(() =>
-        res.redirect('/delete')
-    ).catch((erro) =>
-        res.send('Esta postagem não existe!')
-    )
-}
-const deleteuser = (req, res) => {
-    insert.Usuarios.destroy({
-        where: { 'id': req.params.id }
-    }).then(() =>
-        res.redirect('/delete')
-    ).catch((erro) =>
-        res.send('Esta postagem não existe!')
-    )
-}
+
 module.exports = {
-    deletepost: deletepost,
-    deleteuser: deleteuser
+    async deletepost(req, res) {
+        deletepost = await insert.Orcamento.destroy({
+            where: { 'id': req.params.id }
+        }).then(() =>
+            res.redirect('/listaorcamento')
+        ).catch((erro) =>
+            res.send('Esta postagem não existe!')
+        )
+    },
+    async deleteuser(req, res) {
+        deleteuser = await insert.Usuarios.destroy({
+            where: { 'id': req.params.id }
+        }).then(() =>
+            res.redirect('/listaclientes')
+        ).catch((erro) =>
+            res.send('Esta postagem não existe!')
+        )
+    }
 }

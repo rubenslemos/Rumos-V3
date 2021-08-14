@@ -1,58 +1,73 @@
-<section class="sessao-clientes" id="clientes">
-    <div class="clientes-wrapper listaclientes">
+<section class="sessao-listaclientes" id="listaclientes">
+    <div class="listaclientes-wrapper listaclientes">
         <% readuser.forEach( readuser => {%>
-            <div class="listaclientes">
-                <p>
-                    Usuario:
+            <div class="listaclientes border">
+                <p class="etiquetauser">
+                    Usuario:</p>
+                <p class="conteudo">
                     <%= readuser.nome %>
                 </p>
-                <p>
-                    email:
+                <p class="etiquetauser">
+                    email:</p>
+                <p class="conteudo">
                     <%= readuser.email %>
                 </p>
-                <p>
-                    CPF:
+                <p class="etiquetauser">
+                    CPF:</p>
+                <p class="conteudo">
                     <%= readuser.cpf %>
                 </p>
-            </div>
-            <div class="listaclientes">
-                <p>
-                    Telefone:
+                <p class="etiquetauser">
+                    Telefone:</p>
+                <p class="conteudo">
                     <%= readuser.telefone %>
                 </p>
-                <p>
-                    Nascimento:
+                <p class="etiquetauser">
+                    Nascimento:</p>
+                <p class="conteudo">
                     <%= readuser.nascimento %>
                 </p>
-                <p>
-                    Sexo:
+                <p class="etiquetauser">
+                    Sexo:</p>
+                <p class="conteudo">
                     <%= readuser.sexo %>
                 </p>
-            </div>
-            <div class="listaclientes">
-                <p>
-                    Endereço:
+                <p class="etiquetauser">
+                    Endereço:</p>
+                <p class="conteudo">
                     <%= readuser.endereco %>
                 </p>
-                <p>
-                    Cidade:
+                <p class="etiquetauser">
+                    Cidade:</p>
+                <p class="conteudo">
                     <%= readuser.cidade %>
                 </p>
-                <p>
-                    Estado:
+                <p class="etiquetauser">
+                    Estado:</p>
+                <p class="conteudo">
                     <%= readuser.estado %>
                 </p>
-                <p>
-                    CEP:
+                <p class="etiquetauser">
+                    CEP:</p>
+                <p class="conteudo">
                     <%= readuser.cep %>
-                        <% } )%>
                 </p>
+                <div class="buttonuser">
+                    <p class="buttonousuario">
+                        <a href="#"><button class="btn buttonuser">Editar</button></a>
+                    </p>
+                </div>
+                <div class="buttonuser">
+                    <p class="buttonusuario">
+                        <a class="buttonuser" href="/listaclientes/<%= readuser.id%>"><button class="btn buttonuser">Excluir</button></a>
+                    </p>
+                </div>
             </div>
-            <br>
-            <div class="button">
-                <p class="button">
-                    <a href="/clientes"><button class="btn button">Voltar</button></a>
-                </p>
-            </div>
+            <% } )%>
+                <div class="buttonusuario">
+                    <p class="buttonusuarios">
+                        <a href="/clientes"><button class="btn buttonuser">Voltar</button></a>
+                    </p>
+                </div>
     </div>
 </section>
