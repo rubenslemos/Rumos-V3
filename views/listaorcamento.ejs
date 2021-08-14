@@ -1,43 +1,50 @@
-<section class="sessao-clientes" id="clientes">
-    <div class="clientes-wrapper listaclientes">
+<section class="sessao-listaorcamento" id="listaorcamento">
+    <div class="listaorcamento-wrapper">
         <% readorca.forEach( readorca => {%>
-            <div class="listaorcamento">
-                <p>
-                    Peca:
+            <div class="listaorcamento border">
+                <p class="etiqueta">
+                    Produto:
                     <%= readorca.peca %>
                 </p>
-                <p>
-                    Preco de Compra:
-                    <%= readorca.compras %>
+                <p class="etiqueta">
+                    Compra R$:
+                    <%= readorca.compras %> ,00
                 </p>
-                <p>
+                <p class="etiqueta">
                     Quantidade:
                     <%= readorca.quantidade %>
                 </p>
-                <p>
-                    lucro %:
-                    <%= readorca.lucro %>
+                <p class="etiqueta">
+                    lucro :
+                    <%= readorca.lucro %> %
                 </p>
-                <p>
-                    Preço Venda:
-                    <%= readorca.venda %>
+                <p class="etiqueta">
+                    Venda R$:
+                    <%= readorca.venda %> ,00
                 </p>
-                <p>
-                    Custo de mão de obra:
-                    <%= readorca.maodeobra %>
+                <p class="etiqueta">
+                    Mão de obra R$:
+                    <%= readorca.maodeobra %> ,00
                 </p>
-                <p>
-                    Serviço Incluso:
-                    <%= readorca.servicos %>
-                </p>
-                <p>
-                    <% } )%>
-                </p>
-            </div>
-            <br>
-            <div class="button">
-                <p class="button">
-                    <a href="/orcamento"><button class="btn button">Voltar</button></a>
+                <p class="etiqueta">
+                    Serviço:
+                    <%= readorca.servicos%>
+                        <div class="buttonorc">
+                            <p class="buttonorcamento">
+                                <a href="#"><button class="btn buttonorc">Editar</button></a>
+                            </p>
+                        </div>
+                        <div class="buttonorc">
+                            <p class="buttonorcamento">
+                                <a href="/listaorcamento"><button class="btn buttonorc">Excluir</button></a>
+                            </p>
+                        </div>
+                        <% } )%>
+                            <div class="button">
+                                <p class="buttonorcamento">
+                                    <a href="/orcamento"><button class="btn button">Voltar</button></a>
+                                </p>
+                            </div>
                 </p>
             </div>
     </div>
