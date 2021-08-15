@@ -3,31 +3,38 @@
         <% readorca.forEach( readorca => {%>
             <div class="listaorcamento border">
                 <p class="etiqueta">
-                    Produto:
+                    Produto:</p>
+                <p class="conteudo">
                     <%= readorca.peca %>
                 </p>
                 <p class="etiqueta">
-                    Compra R$:
+                    Compra R$:</p>
+                <p class="conteudo">
                     <%= readorca.compras %> ,00
                 </p>
                 <p class="etiqueta">
-                    Quantidade:
+                    Quantidade:</p>
+                <p class="conteudo">
                     <%= readorca.quantidade %>
                 </p>
                 <p class="etiqueta">
-                    lucro :
+                    lucro :</p>
+                <p class="conteudo">
                     <%= readorca.lucro %> %
                 </p>
                 <p class="etiqueta">
-                    Venda R$:
+                    Venda R$:</p>
+                <p class="conteudo">
                     <%= readorca.venda %> ,00
                 </p>
                 <p class="etiqueta">
-                    Mão de obra R$:
+                    Mão de obra R$:</p>
+                <p class="conteudo">
                     <%= readorca.maodeobra %> ,00
                 </p>
                 <p class="etiqueta">
-                    Serviço:
+                    Serviço:</p>
+                <p class="conteudo">
                     <%= readorca.servicos%>
                         <div class="buttonorc">
                             <p class="buttonorcamento">
@@ -40,9 +47,9 @@
                             </p>
                         </div>
                         <% } )%>
-                            <div class="button">
-                                <p class="buttonorcamento">
-                                    <a href="/orcamento"><button class="btn button">Voltar</button></a>
+                            <div class="buttonusuario">
+                                <p class="buttonorcamentos">
+                                    <a href="/orcamento"><button class="btn buttonuser">Voltar</button></a>
                                 </p>
                             </div>
                 </p>
