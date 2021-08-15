@@ -804,6 +804,7 @@
     
     .sessao-listaorcamento div {
         padding-bottom: 1rem;
+        left: 4rem;
     }
     
     .listaorcamento.border {
@@ -815,8 +816,7 @@
     p.etiqueta {
         padding-bottom: 1rem;
         padding-top: 1rem;
-        text-align: center;
-        margin-left: 1rem;
+        margin-left: -2rem;
         width: 11rem;
     }
     
@@ -865,12 +865,11 @@
     }
     
     p.buttonorcamentos {
-        margin-top: .5rem;
-        padding-left: 5rem;
+        margin-top: 1rem;
     }
     
     button.btn.buttonorc {
-        width: 9rem;
+        width: 10rem;
         margin-bottom: 0rem;
         border: none;
     }
@@ -884,7 +883,10 @@
     }
     
     .sessao-listaclientes div {
-        padding-bottom: 1rem;
+        padding-bottom: 0rem;
+        margin-bottom: 1rem;
+        width: 97.7%;
+        margin-left: .5rem;
     }
     
     .listaclientes.border {
@@ -964,17 +966,132 @@
     
     p.conteudo {
         padding-bottom: 1rem;
-        border-bottom: .1rem #0083b0 solid;
-        text-align: center;
-        margin-left: -3rem;
+        margin-left: -2rem;
         width: 21rem;
         grid-row: 2;
         padding-right: 2rem;
         color: #d4d4f5;
+        border-bottom: .1rem #0083b0 solid;
+    }
+    
+    p.conteudouser {
+        margin-left: 1rem;
+        width: 11rem;
+        grid-row: 2;
+        color: #d4d4f5;
+        text-align: center;
     }
     
     p.buttonousuario {
         margin-left: 1rem;
+    }
+    
+    h1.titulo {
+        color: var(--blue-Rumos);
+        text-align: center;
+        font-weight: 800;
+        font-family: var(--font-primary);
+        font-size: 3rem;
+        text-shadow: 0.3rem 0.1rem rgb(0 0 0 / 80%);
+    }
+    
+    .bg-modal {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        position: fixed;
+        z-index: 2;
+        top: -100%;
+        display: block;
+        transition: .35s;
+    }
+    
+    .bg-modalon {
+        top: 0;
+    }
+    
+    .modal {
+        width: 40%;
+        height: 45%;
+        background-color: var(--cor-fundo);
+        border: .15rem solid teal;
+        border-radius: .6rem;
+        margin: 8rem auto 0 auto;
+    }
+    
+    .modal span {
+        float: right;
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--azul-Rumos);
+        text-shadow: .05rem .05rem .3rem rgba(0, 0, 0, .8);
+        margin: .5rem 1rem;
+        transition: .35s;
+        cursor: pointer;
+    }
+    
+    .modal span:hover {
+        color: var(--blue-Rumos);
+        transition: .35s;
+    }
+    
+    .modaldisplay {
+        display: flex;
+    }
+    
+    .modaldisplay p {
+        position: relative;
+        padding-left: 5rem;
+        left: 6rem;
+        top: 1rem;
+    }
+    
+    .orcainput input {
+        margin-bottom: 2rem;
+        font-family: var(--font-secondary);
+        font-size: 1.3rem;
+        color: var(--blue-Rumos);
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
+        background-color: rgba(65, 59, 59, .95);
+        border-bottom: 1px solid var(--blue-Rumos);
+        width: 41rem;
+        outline: none;
+        margin-top: 1.5rem;
+        margin-left: 3.5rem;
+    }
+    
+    .modaluser {
+        width: 40%;
+        height: 60%;
+        background-color: var(--cor-fundo);
+        border: .15rem solid teal;
+        border-radius: .6rem;
+        margin: 8rem auto 0 auto;
+    }
+    
+    .modaluser span {
+        float: right;
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--azul-Rumos);
+        text-shadow: .05rem .05rem .3rem rgba(0, 0, 0, .8);
+        margin: .5rem 1rem;
+        transition: .35s;
+        cursor: pointer;
+    }
+    
+    .userinput input {
+        margin-bottom: 2rem;
+        font-family: var(--font-secondary);
+        font-size: 1.3rem;
+        color: var(--blue-Rumos);
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
+        background-color: rgba(65, 59, 59, .95);
+        border-bottom: 1px solid var(--blue-Rumos);
+        width: 36rem;
+        outline: none;
+        margin-top: 1.5rem;
+        margin-left: 6.5rem;
     }
     
     @media (max-width: 1724px) {

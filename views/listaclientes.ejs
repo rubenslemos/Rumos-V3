@@ -4,57 +4,57 @@
             <div class="listaclientes border">
                 <p class="etiquetauser">
                     Usuario:</p>
-                <p class="conteudo">
+                <p class="conteudouser">
                     <%= readuser.nome %>
                 </p>
                 <p class="etiquetauser">
                     email:</p>
-                <p class="conteudo">
+                <p class="conteudouser">
                     <%= readuser.email %>
                 </p>
                 <p class="etiquetauser">
                     CPF:</p>
-                <p class="conteudo">
+                <p class="conteudouser">
                     <%= readuser.cpf %>
                 </p>
                 <p class="etiquetauser">
                     Telefone:</p>
-                <p class="conteudo">
+                <p class="conteudouser">
                     <%= readuser.telefone %>
                 </p>
                 <p class="etiquetauser">
                     Nascimento:</p>
-                <p class="conteudo">
+                <p class="conteudouser">
                     <%= readuser.nascimento %>
                 </p>
                 <p class="etiquetauser">
                     Sexo:</p>
-                <p class="conteudo">
+                <p class="conteudouser">
                     <%= readuser.sexo %>
                 </p>
                 <p class="etiquetauser">
                     Endereço:</p>
-                <p class="conteudo">
+                <p class="conteudouser">
                     <%= readuser.endereco %>
                 </p>
                 <p class="etiquetauser">
                     Cidade:</p>
-                <p class="conteudo">
+                <p class="conteudouser">
                     <%= readuser.cidade %>
                 </p>
                 <p class="etiquetauser">
                     Estado:</p>
-                <p class="conteudo">
+                <p class="conteudouser">
                     <%= readuser.estado %>
                 </p>
                 <p class="etiquetauser">
                     CEP:</p>
-                <p class="conteudo">
+                <p class="conteudouser">
                     <%= readuser.cep %>
                 </p>
                 <div class="buttonuser">
                     <p class="buttonousuario">
-                        <a href="#"><button class="btn buttonuser">Editar</button></a>
+                        <a href="#"><button class="btn buttonuser"onclick="abrirModal()">Editar</button></a>
                     </p>
                 </div>
                 <div class="buttonuser">
@@ -71,3 +71,35 @@
                 </div>
     </div>
 </section>
+<div class="bg-modal" id="modal">
+    <div class="modaluser">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <form action="/add" method="POST" id="orcamentos">
+            <h1 class="titulo">Cliente</h1>
+            <div class="userinput">
+                <input type="text" placeholder="Nome:" name="nome" required>
+                <p class="email">
+                    <input class="email" type="email" placeholder="E-mail:" name="email" required>
+                    <input class="interna2" type="text" placeholder="CPF:" name="cpf" required></p>
+                <p class="interna">
+                    <input class="interna" type="text" placeholder="Telefone:" name="telefone" required>
+                    <input class="interna" type="text" placeholder="Nascimento:" name="nascimento" required onfocus="(this.type='date')">
+                    <input class="interna2" type="text" placeholder="Sexo:" name="sexo" required>
+                </p>
+                <input type="text" placeholder="Endereço:" name="endereco" required>
+                <p class="interna">
+                    <input class="interna" type="text" placeholder="Cidade:" name="cidade" required>
+                    <input class="interna" type="text" placeholder="Estado:" name="estado" required>
+                    <input class="interna2" type="text" placeholder="CEP:" name="cep" required></p>
+            </div>
+        </form>
+        <div class="modaldisplay">
+            <p>
+                <button class="btn modalbtn">Salvar</button>
+            </p>
+            <p>
+                <button class="btn modalbtn" onclick="fecharModal()">Cancelar</button>
+            </p>
+        </div>
+    </div>
+</div>
