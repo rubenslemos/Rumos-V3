@@ -696,7 +696,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-left: -7rem;
+        margin-right: 18rem;
     }
     
     .sessao-orcamento p {
@@ -893,6 +893,7 @@
         display: grid;
         grid-template-columns: repeat(11, 10.7rem);
         grid-template-rows: repeat(2, 3rem);
+        border-bottom: .1rem solid;
     }
     
     .listaclientes-wrapper {
