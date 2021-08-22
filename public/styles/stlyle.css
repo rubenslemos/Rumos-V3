@@ -982,6 +982,10 @@
         font-weight: 600;
     }
     
+    p.etiquetauser.mail {
+        width: 15rem;
+    }
+    
     p.conteudo {
         padding-bottom: 1rem;
         margin-left: -2rem;
@@ -998,6 +1002,10 @@
         grid-row: 2;
         color: #d4d4f5;
         text-align: center;
+    }
+    
+    p.conteudouser.mail {
+        width: 15rem;
     }
     
     p.buttonousuario {
