@@ -679,6 +679,7 @@
     
     div.orcabtn {
         margin-left: -2.5rem;
+        margin-top: 2rem;
     }
     
     .sessao-orcamento img {
@@ -722,6 +723,7 @@
     p.orcamento {
         display: grid;
         grid-template-columns: repeat(4, 11rem);
+        grid-template-rows: repeat(2, 2.5rem);
     }
     
     input[type="text"].orcamento {
@@ -732,9 +734,14 @@
         width: 10rem;
     }
     
-    input[type="text"].orcamento2:nth-child(2) {
+    input[type="text"].orcamento2 {
         width: 31.5rem;
         grid-column: 2/4;
+    }
+    
+    input[type="text"].orcamento1 {
+        width: 10rem;
+        grid-column: 1;
     }
     
     p.orcamento2 {
@@ -956,6 +963,14 @@
         grid-row: 2;
     }
     
+    p.cpf.etiquetauser {
+        width: 17rem;
+    }
+    
+    p.cpf.conteudouser {
+        width: 17rem;
+    }
+    
     p.etiquetauser {
         padding-bottom: 1rem;
         padding-top: 1.5rem;
@@ -963,6 +978,8 @@
         margin-left: 1rem;
         width: 11rem;
         grid-row: 1;
+        font-family: 'Josefin Slab';
+        font-weight: 600;
     }
     
     p.conteudo {
@@ -996,17 +1013,6 @@
         text-shadow: 0.3rem 0.1rem rgb(0 0 0 / 80%);
     }
     
-    .bg-modal {
-        width: 100%;
-        height: 95%;
-        background: rgba(0, 0, 0, 0.75);
-        position: fixed;
-        z-index: 2;
-        top: -100%;
-        display: block;
-        transition: .35s;
-    }
-    
     .bgmodal {
         width: 100%;
         height: 95%;
@@ -1027,6 +1033,7 @@
     
     .modaldisplay {
         display: flex;
+        margin-top: 1rem;
     }
     
     .modaldisplay p {
@@ -1037,7 +1044,7 @@
     }
     
     .orcainput input {
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
         font-family: var(--font-secondary);
         font-size: 1.3rem;
         color: var(--blue-Rumos);
@@ -1046,8 +1053,8 @@
         border-bottom: 1px solid var(--blue-Rumos);
         width: 43rem;
         outline: none;
-        margin-top: 1.5rem;
-        margin-left: 2.5rem;
+        margin-left: 3.5rem;
+        grid-row: 2;
     }
     
     .modaluser {
@@ -1061,7 +1068,7 @@
     }
     
     .userinput input {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         font-family: var(--font-secondary);
         font-size: 1.3rem;
         color: var(--blue-Rumos);
@@ -1070,8 +1077,25 @@
         border-bottom: 1px solid var(--blue-Rumos);
         width: 36rem;
         outline: none;
-        margin-top: 1.5rem;
+        margin-top: .8rem;
         margin-left: 6.5rem;
+    }
+    
+    small.email {
+        grid-column: 1/2;
+    }
+    
+    small.interna2 {
+        grid-column: 3;
+    }
+    
+    .modaluser small {
+        grid-row: 1;
+        margin-left: 6.5rem;
+        color: #b9b8b8;
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
+        font-family: var(--font-secondary);
+        font-size: 1.3rem;
     }
     
     .sessao-editclientes {
@@ -1095,7 +1119,10 @@
         font-size: 1rem;
         color: white;
         text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
-        padding-left: 3rem;
+        grid-row: 1;
+        margin-top: 1rem;
+        margin-left: 3.5rem;
+        text-align: initial;
     }
     
     @media (max-width: 1724px) {

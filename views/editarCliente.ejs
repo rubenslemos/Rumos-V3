@@ -5,20 +5,32 @@
                 <h1 class="titulo">Cliente</h1>
                 <div class="userinput">
                     <input type="hidden" placeholder="id" name="id" id="id" value="<%= exibirCliente.id %>">
+                    <small>Nome</small>
                     <input type="text" placeholder="Nome:" name="nome" value="<%= exibirCliente.nome %>">
                     <p class="email">
+                        <small class="email">E-mail</small>
                         <input class="email" type="email" placeholder="E-mail:" name="email" value="<%= exibirCliente.email %>">
-                        <input class="interna2" type="text" placeholder="CPF:" name="cpf" value="<%= exibirCliente.cpf %>"></p>
+                        <small class="interna2">CPF</small>
+                        <input class="interna2" type="text" placeholder="CPF:" name="cpf" value="<%= exibirCliente.cpf %>">
+                    </p>
                     <p class="interna">
+                        <small>Telefone</small>
                         <input class="interna" type="text" placeholder="Telefone:" name="telefone" value="<%= exibirCliente.telefone %>">
+                        <small>Nascimento</small>
                         <input class="interna" type="text" placeholder="Nascimento:" name="nascimento" value="<%= exibirCliente.nascimento %>" onfocus="(this.type='date')">
+                        <small>Sexo</small>
                         <input class="interna2" type="text" placeholder="Sexo:" name="sexo" value="<%= exibirCliente.sexo %>">
                     </p>
+                    <small>Endereço</small>
                     <input type="text" placeholder="Endereço:" name="endereco" value="<%= exibirCliente.endereco %>">
                     <p class="interna">
+                        <small>Cidade</small>
                         <input class="interna" type="text" placeholder="Cidade:" name="cidade" value="<%= exibirCliente.cidade %>">
+                        <small>Estado</small>
                         <input class="interna" type="text" placeholder="Estado:" name="estado" value="<%= exibirCliente.estado %>">
-                        <input class="interna2" type="text" placeholder="CEP:" name="cep" value="<%= exibirCliente.cep %>"></p>
+                        <small>CEP</small>
+                        <input class="interna2" type="text" placeholder="CEP:" name="cep" value="<%= exibirCliente.cep %>">
+                    </p>
                 </div>
             </form>
             <div class="modaldisplay">
