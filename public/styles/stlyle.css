@@ -894,6 +894,11 @@
         margin-bottom: 1rem;
         width: 97.7%;
         margin-left: .5rem;
+        margin-top: 1rem;
+    }
+    
+    div.buttonuser {
+        margin-top: -.5rem;
     }
     
     .listaclientes.border {
@@ -973,13 +978,16 @@
     
     p.etiquetauser {
         padding-bottom: 1rem;
-        padding-top: 1.5rem;
+        padding-top: .5rem;
         text-align: center;
         margin-left: 1rem;
         width: 11rem;
         grid-row: 1;
         font-family: 'Josefin Slab';
         font-weight: 600;
+        font-size: 1.1rem;
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
+        color: dodgerblue;
     }
     
     p.etiquetauser.mail {
