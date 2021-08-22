@@ -24,9 +24,9 @@
                     <%= readuser.telefone %>
                 </p>
                 <p class="etiquetauser">
-                    Nascimento</p>
+                    Nascido em</p>
                 <p class="conteudouser">
-                    <%= readuser.nascimento %>
+                    <%= moment(readuser.nascimento).format('DD/MM/YYYY') %>
                 </p>
                 <p class="etiquetauser">
                     Sexo</p>

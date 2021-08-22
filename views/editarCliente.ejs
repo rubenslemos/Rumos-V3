@@ -16,8 +16,8 @@
                     <p class="interna">
                         <small>Telefone</small>
                         <input class="interna" type="text" placeholder="Telefone:" name="telefone" value="<%= exibirCliente.telefone %>">
-                        <small>Nascimento</small>
-                        <input class="interna" type="text" placeholder="Nascimento:" name="nascimento" value="<%= exibirCliente.nascimento %>" onfocus="(this.type='date')">
+                        <small>Nascido em</small>
+                        <input class="interna" type="text" placeholder="Nascimento:" name="nascimento" value="<%= moment(exibirCliente.nascimento).format('DD/MM/YYYY') %>" onfocus="(this.type='date')">
                         <small>Sexo</small>
                         <input class="interna2" type="text" placeholder="Sexo:" name="sexo" value="<%= exibirCliente.sexo %>">
                     </p>
