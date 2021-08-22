@@ -38,7 +38,7 @@
                     <%= readorca.servicos%>
                         <div class="buttonorc">
                             <p class="buttonorcamento">
-                                <a href="#/<%= readorca.id%>"><button class="btn buttonorc"onclick="abrirModal()">Editar</button></a>
+                                <a href="editarOrcamento/<%= readorca.id%>"><button class="btn buttonorc">Editar</button></a>
                             </p>
                         </div>
                         <div class="buttonorc">
@@ -56,34 +56,3 @@
             </div>
     </div>
 </section>
-<div class="bg-modal" id="modal">
-    <div class="modal">
-        <span class="close" onclick="fecharModal()">&times;</span>
-        <!-- <% readorca.forEach( readorca =>  {%> -->
-        <form action="modal/<%=readorca.id%>" method="POST" id="orcamentos">
-            <h1 class="titulo">Orçamentos</h1>
-            <div class="orcainput">
-                <input type="text" placeholder="Peça:" name="peca" value="<%= readorca.peca %>">
-                <p class="orcamento">
-                    <input class="orcamento" type="text" placeholder="Compra $:" name="compras" value="<%= readorca.compras %>">
-                    <input class="orcamento" type="text" placeholder="Quantidade:" name="quantidade" value="<%= readorca.quantidade %>">
-                    <input class="orcamento" type="text" placeholder="Lucro(%):" name="lucro" value="<%= readorca.lucro %>">
-                    <input class="orcamento" type="text" placeholder="Venda $:" name="venda" value="<%= readorca.venda %>">
-                </p>
-                <p class="orcamento">
-                    <input class="orcamento2" type="text" placeholder="Mão de Obra:" name="maodeobra" value="<%= readorca.maodeobra %>">
-                    <input class="orcamento2" type="text" placeholder="Serviços:" name="servicos" value="<%= readorca.servicos%>">
-                </p>
-            </div>
-        </form>
-        <div class="modaldisplay">
-            <p>
-                <button class="btn modalbtn">Salvar</button>
-            </p>
-            <p>
-                <button class="btn modalbtn" onclick="fecharModal()">Cancelar</button>
-            </p>
-        </div>
-        <!-- <% } )%> -->
-    </div>
-</div>

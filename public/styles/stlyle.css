@@ -721,19 +721,19 @@
     
     p.orcamento {
         display: grid;
-        grid-template-columns: repeat(4, 10.5rem);
+        grid-template-columns: repeat(4, 11rem);
     }
     
     input[type="text"].orcamento {
         width: 9.6rem;
     }
     
-    input[type="text"].orcamento2 {
+    input[type="text"].orcamento3 {
         width: 10rem;
     }
     
     input[type="text"].orcamento2:nth-child(2) {
-        width: 30.5rem;
+        width: 31.5rem;
         grid-column: 2/4;
     }
     
@@ -998,7 +998,7 @@
     
     .bg-modal {
         width: 100%;
-        height: 100%;
+        height: 95%;
         background: rgba(0, 0, 0, 0.75);
         position: fixed;
         z-index: 2;
@@ -1007,33 +1007,22 @@
         transition: .35s;
     }
     
-    .bg-modalon {
-        top: 0;
+    .bgmodal {
+        width: 100%;
+        height: 95%;
+        background: rgba(0, 0, 0, 0.75);
+        position: fixed;
+        display: block;
     }
     
     .modal {
         width: 40%;
-        height: 45%;
+        height: 50%;
         background-color: var(--cor-fundo);
-        border: .15rem solid teal;
+        border: .15rem solid rgba(0, 131, 176, .3);
         border-radius: .6rem;
         margin: 8rem auto 0 auto;
-    }
-    
-    .modal span {
-        float: right;
-        font-size: 2.2rem;
-        font-weight: 700;
-        color: var(--azul-Rumos);
-        text-shadow: .05rem .05rem .3rem rgba(0, 0, 0, .8);
-        margin: .5rem 1rem;
-        transition: .35s;
-        cursor: pointer;
-    }
-    
-    .modal span:hover {
-        color: var(--blue-Rumos);
-        transition: .35s;
+        box-shadow: 0.05rem 0.05rem 2rem rgba(0, 0, 0, .8);
     }
     
     .modaldisplay {
@@ -1055,30 +1044,20 @@
         text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
         background-color: rgba(65, 59, 59, .95);
         border-bottom: 1px solid var(--blue-Rumos);
-        width: 41rem;
+        width: 43rem;
         outline: none;
         margin-top: 1.5rem;
-        margin-left: 3.5rem;
+        margin-left: 2.5rem;
     }
     
     .modaluser {
         width: 40%;
         height: 60%;
         background-color: var(--cor-fundo);
-        border: .15rem solid teal;
         border-radius: .6rem;
         margin: 8rem auto 0 auto;
-    }
-    
-    .modaluser span {
-        float: right;
-        font-size: 2.2rem;
-        font-weight: 700;
-        color: var(--azul-Rumos);
-        text-shadow: .05rem .05rem .3rem rgba(0, 0, 0, .8);
-        margin: .5rem 1rem;
-        transition: .35s;
-        cursor: pointer;
+        box-shadow: 0.05rem 0.05rem 2rem rgba(0, 0, 0, .8);
+        border: .15rem solid rgba(0, 131, 176, .3);
     }
     
     .userinput input {
@@ -1093,6 +1072,30 @@
         outline: none;
         margin-top: 1.5rem;
         margin-left: 6.5rem;
+    }
+    
+    .sessao-editclientes {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sessao-editarOrcamento {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .orcamentoEdit {
+        font-family: var(--font-secondary);
+        font-size: 1rem;
+        color: white;
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
+        padding-left: 3rem;
     }
     
     @media (max-width: 1724px) {

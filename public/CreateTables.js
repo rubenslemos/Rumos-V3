@@ -4,25 +4,25 @@ const Orcamento = database.sequelize.define('orcamento', {
             type: database.Sequelize.STRING
         },
         compras: {
-            type: database.Sequelize.FLOAT
+            type: database.Sequelize.STRING
         },
         quantidade: {
-            type: database.Sequelize.INTEGER
+            type: database.Sequelize.STRING
         },
         lucro: {
-            type: database.Sequelize.FLOAT
+            type: database.Sequelize.STRING
         },
         venda: {
-            type: database.Sequelize.FLOAT
+            type: database.Sequelize.STRING
         },
         maodeobra: {
-            type: database.Sequelize.FLOAT
+            type: database.Sequelize.STRING
         },
         servicos: {
             type: database.Sequelize.STRING
         }
     })
-    // Orcamento.sync({ Force: true })
+    //Orcamento.sync({ Force: true })
 const Usuarios = database.sequelize.define('usuarios', {
         nome: {
             type: database.Sequelize.STRING
@@ -31,10 +31,10 @@ const Usuarios = database.sequelize.define('usuarios', {
             type: database.Sequelize.STRING
         },
         cpf: {
-            type: database.Sequelize.FLOAT
+            type: database.Sequelize.STRING
         },
         telefone: {
-            type: database.Sequelize.FLOAT
+            type: database.Sequelize.STRING
         },
         nascimento: {
             type: database.Sequelize.DATEONLY
@@ -52,10 +52,10 @@ const Usuarios = database.sequelize.define('usuarios', {
             type: database.Sequelize.STRING
         },
         cep: {
-            type: database.Sequelize.FLOAT
+            type: database.Sequelize.STRING
         }
     })
-    // Usuarios.sync({ Force: true })
+    //Usuarios.sync({ Force: true })
 module.exports = {
     Orcamento: Orcamento,
     Usuarios: Usuarios
