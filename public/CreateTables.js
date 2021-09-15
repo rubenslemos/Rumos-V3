@@ -56,7 +56,24 @@ const Usuarios = database.sequelize.define('usuarios', {
         }
     })
     //Usuarios.sync({ Force: true })
+const Login = database.sequelize.define('login', {
+    usuario: {
+        type: database.Sequelize.STRING
+    },
+    email: {
+        type: database.Sequelize.STRING
+    },
+    Senha: {
+        type: database.Sequelize.STRING
+    },
+    eAdmin: {
+        type: database.Sequelize.INTEGER
+    }
+})
+
+//Login.sync({ force: true })
 module.exports = {
     Orcamento: Orcamento,
-    Usuarios: Usuarios
+    Usuarios: Usuarios,
+    Login: Login
 }

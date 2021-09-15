@@ -3,28 +3,28 @@
         <div class="contato-left"></div>
         <div class="contato-right">
             <h1>Contato</h1>
-            <form action="#">
+            <form action="/email" method="POST" id="form" name="form">
                 <div class="input-group">
-                    <input type="text" class="field" id="nome">
+                    <input type="text" class="field" id="nome" name="nome">
                     <label for="nome" class="field-label">
                         Nome
                     </label>
                 </div>
                 <div class="input-group">
-                    <input type="text" class="field" id="email">
+                    <input type="text" class="field" id="email" name="email">
                     <label for="email" class="field-label">
                         E-Mail
                     </label>
                 </div>
                 <div class="input-group">
-                    <textarea class="field" id="mensagem">
+                    <textarea class="field" id="mensagem" name="mensagem">
 
                     </textarea>
                     <label for="mensagem" class="field-label">
                         Mensagem
                     </label>
                 </div>
-                <button type="submit" class="btn-subimit">Enviar</button>
+                <button type="submit" class="btn-subimit" nome="button" id="button">Enviar</button>
             </form>
         </div>
     </div>

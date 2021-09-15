@@ -389,7 +389,7 @@
     }
     
     .sessao-clientes div {
-        width: 35%;
+        width: 40%;
     }
     
     p.email {
@@ -428,6 +428,7 @@
     
     div.button {
         width: 100%;
+        padding-top: 1rem;
     }
     
     p.button {
@@ -480,8 +481,7 @@
     }
     
     .sessao-clientes form {
-        margin-top: 3rem;
-        margin-bottom: 2rem;
+        margin-top: 5rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -638,12 +638,12 @@
     }
     
     .sessao-orcamento div {
-        width: 40%;
+        width: 55%;
     }
     
     .orcamento-wrapper {
         width: 100%;
-        height: 50%;
+        height: 65%;
         background-color: rgba(65, 59, 59, .95);
         box-shadow: .05rem .05rem 2rem rgba(0, 0, 0, .8);
         text-shadow: .05rem .05rem .3rem rgba(0, 0, 0, .8);
@@ -679,7 +679,7 @@
     
     div.orcabtn {
         margin-left: -2.5rem;
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     
     .sessao-orcamento img {
@@ -697,17 +697,17 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-right: 18rem;
+        margin-right: 15rem;
     }
     
     .sessao-orcamento p {
         font-family: var(--font-secondary);
         font-size: 1.5rem;
         color: var(--blue-Rumos);
+        padding-left: 3rem;
     }
     
     .sessao-orcamento input {
-        margin-bottom: 2rem;
         font-family: var(--font-secondary);
         font-size: 1rem;
         color: var(--blue-Rumos);
@@ -717,17 +717,25 @@
         width: 41rem;
         outline: none;
         margin-top: .5rem;
-        margin-left: -2rem;
     }
     
     p.orcamento {
         display: grid;
-        grid-template-columns: repeat(4, 11rem);
+        grid-template-columns: repeat(4, 12.2rem);
         grid-template-rows: repeat(2, 2.5rem);
+        padding-left: 0rem;
+    }
+    
+    input[type="text"].orcamento4 {
+        width: 48rem;
+    }
+    
+    input[type="text"].nome {
+        margin-bottom: 1rem;
     }
     
     input[type="text"].orcamento {
-        width: 9.6rem;
+        width: 11.6rem;
     }
     
     input[type="text"].orcamento3 {
@@ -735,18 +743,39 @@
     }
     
     input[type="text"].orcamento2 {
-        width: 31.5rem;
+        width: 36rem;
         grid-column: 2/4;
     }
     
     input[type="text"].orcamento1 {
-        width: 10rem;
+        width: 11.7rem;
         grid-column: 1;
+    }
+    
+    input[type="password"].orcamento {
+        width: 21rem;
+        grid-column: 1/2;
+        margin-bottom: 1rem;
+    }
+    
+    input[type="email"].orcamento {
+        margin-bottom: 1rem;
+    }
+    
+    input[type="password"].orcamento2 {
+        width: 21rem;
+        grid-column: 3/4;
+        margin-bottom: 1rem;
+    }
+    
+    small.orcamento2 {
+        width: 21rem;
+        grid-column: 3/4;
     }
     
     p.orcamento2 {
         display: grid;
-        grid-template-columns: repeat(3, 14rem);
+        grid-template-columns: repeat(2, 18rem);
     }
     
     .btn {
@@ -780,7 +809,7 @@
     }
     
     .footer-content {
-        width: 60%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -789,6 +818,7 @@
         font-family: var(--font-secondary);
         color: #0083b0;
         font-size: 1.2rem;
+        width: initial;
     }
     
     .social-list a {
@@ -1038,8 +1068,8 @@
     }
     
     .modal {
-        width: 40%;
-        height: 50%;
+        width: 50%;
+        height: 60%;
         background-color: var(--cor-fundo);
         border: .15rem solid rgba(0, 131, 176, .3);
         border-radius: .6rem;
@@ -1050,13 +1080,7 @@
     .modaldisplay {
         display: flex;
         margin-top: 1rem;
-    }
-    
-    .modaldisplay p {
-        position: relative;
-        padding-left: 5rem;
-        left: 6rem;
-        top: 1rem;
+        justify-content: space-evenly;
     }
     
     .orcainput input {
@@ -1067,9 +1091,8 @@
         text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
         background-color: rgba(65, 59, 59, .95);
         border-bottom: 1px solid var(--blue-Rumos);
-        width: 43rem;
+        width: 45rem;
         outline: none;
-        margin-left: 3.5rem;
         grid-row: 2;
     }
     
@@ -1137,8 +1160,219 @@
         text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
         grid-row: 1;
         margin-top: 1rem;
-        margin-left: 3.5rem;
         text-align: initial;
+    }
+    
+    div.login {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .login input {
+        margin-bottom: 0rem;
+        font-family: var(--font-secondary);
+        font-size: 1.3rem;
+        color: var(--blue-Rumos);
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
+        background-color: rgba(65, 59, 59, .95);
+        border-bottom: 1px solid var(--blue-Rumos);
+        width: 20rem;
+        outline: none;
+        grid-row: 2;
+    }
+    
+    p.login {
+        display: grid;
+        grid-template-rows: repeat(2, 2.5rem);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    small.login {
+        font-family: var(--font-secondary);
+        font-size: 1.2rem;
+        color: white;
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
+        grid-row: 1;
+        grid-column: 1/2;
+        margin-top: 1rem;
+        text-align: initial;
+        margin-left: .5rem;
+    }
+    
+    small.login2 {
+        font-family: var(--font-secondary);
+        font-size: 1.2rem;
+        color: white;
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
+        grid-row: 1;
+        grid-column: 3/4;
+        margin-top: 1rem;
+        text-align: initial;
+        margin-left: .5rem;
+    }
+    
+    .modallogin {
+        display: flex;
+        margin-top: 1rem;
+        justify-content: space-evenly;
+    }
+    
+    .login1 {
+        width: 30%;
+        height: 50%;
+        background-color: var(--cor-fundo);
+        border: .15rem solid rgba(0, 131, 176, .3);
+        border-radius: .6rem;
+        margin: 8rem auto 0 auto;
+        box-shadow: 0.05rem 0.05rem 2rem rgb(0 0 0 / 80%);
+    }
+    
+    .loginbtn {
+        margin-top: 1rem;
+        margin-left: .2rem;
+    }
+    
+    div.cadastro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .cadastro input {
+        margin-bottom: 1rem;
+        font-family: var(--font-secondary);
+        font-size: 1.3rem;
+        color: var(--blue-Rumos);
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 80%);
+        background-color: rgba(65, 59, 59, .95);
+        border-bottom: 1px solid var(--blue-Rumos);
+        width: 19.5rem;
+        outline: none;
+        grid-row: 2;
+    }
+    
+    input[type="password"].login {
+        grid-column: 1/2;
+    }
+    
+    input[type="password"].login2 {
+        grid-column: 3/4;
+    }
+    
+    input[type="text"].login {
+        grid-column: 1/2;
+    }
+    
+    input[type="email"].login2 {
+        grid-column: 3/4;
+    }
+    
+    p.cadastro {
+        display: grid;
+        grid-template-columns: repeat(2, 10rem);
+        grid-template-rows: repeat(2, 2.5rem);
+        padding-left: 0rem;
+    }
+    
+    .cadastrar {
+        width: 35%;
+        height: 45%;
+        background-color: var(--cor-fundo);
+        border: .15rem solid rgba(0, 131, 176, .3);
+        border-radius: .6rem;
+        margin: 8rem auto 0 auto;
+        box-shadow: 0.05rem 0.05rem 2rem rgb(0 0 0 / 80%);
+    }
+    
+    .modalcadastro {
+        display: flex;
+        margin-top: 1rem;
+        justify-content: space-evenly;
+    }
+    
+    .cadastrobtn {
+        margin-top: 1rem;
+        margin-left: .2rem;
+    }
+    
+    .logado {
+        padding-left: 1rem;
+    }
+    
+    .login3 {
+        width: 25%;
+        height: 40%;
+        background-color: rgba(65, 59, 59, .05);
+        border-radius: .6rem;
+        box-shadow: 0.05rem 0.05rem 1rem rgb(100 100 100);
+        position: absolute;
+        top: 15rem;
+        right: 31rem;
+        opacity: 0;
+        animation: moveBanner 1s .9s forwards;
+    }
+    
+    h1.tituloLogin {
+        color: var(--azul-Rumos);
+        text-align: center;
+        font-weight: 800;
+        font-family: var(--font-primary);
+        font-size: 3rem;
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(255 255 255 / 30%);
+    }
+    
+    small.logins {
+        font-family: var(--font-secondary);
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--azul-Rumos);
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(255 255 255 / 25%);
+        grid-row: 1;
+        grid-column: 1/2;
+        margin-top: 1rem;
+        text-align: initial;
+        margin-left: .5rem;
+    }
+    
+    input.logins {
+        margin-bottom: 0rem;
+        font-family: var(--font-secondary);
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--azul-Rumos);
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(255 255 255 / 25%);
+        background-color: rgba(0, 0, 0, .0);
+        border-bottom: 1px solid var(--azul-Rumos);
+        width: 20rem;
+        outline: none;
+        grid-row: 2;
+    }
+    
+    .error_msg {
+        font-family: var(--font-action);
+        font-weight: 500;
+        font-size: 1.3rem;
+        color: red;
+        background-color: transparent;
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 91%);
+        text-align: center;
+    }
+    
+    .success_msg {
+        font-family: var(--font-action);
+        font-weight: 900;
+        font-size: 1.3rem;
+        color: var(--blue-Rumos);
+        background-color: transparent;
+        text-shadow: 0.05rem 0.05rem 0.3rem rgb(0 0 0 / 91%);
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
+        z-index: 20;
     }
     
     @media (max-width: 1724px) {
@@ -1147,22 +1381,9 @@
         }
     }
     
-    @media (max-width: 1576px) {
-        .sessao-clientes form {
-            justify-content: end;
-            margin-left: 7rem;
-        }
-    }
-    
     @media (max-width: 1522px) {
         .sessao-orcamento img {
             width: 20%;
-        }
-    }
-    
-    @media (max-width: 1464px) {
-        .sessao-clientes form {
-            margin-left: 6rem;
         }
     }
     
@@ -1176,25 +1397,10 @@
     }
     
     @media (max-width: 1376px) {
-        .sessao-clientes form {
-            margin-left: 5rem;
-        }
         .sessao-clientes img {
             height: 75%;
             margin-right: -4rem;
             margin-left: 1rem;
-        }
-    }
-    
-    @media (max-width: 1376px) {
-        .clientes-wrapper {
-            height: 50%;
-        }
-        .sessao-orcamento div {
-            width: 55%;
-        }
-        .orcamento-wrapper {
-            height: 50%;
         }
     }
     

@@ -26,28 +26,46 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="/" class="menu-link"><i class="fas fa-home"></i> Início</a></li>
-                    <li class="menu-item"><a href="/conhecimento" class="menu-link"><i class="fas fa-book"></i> Conhecimento</a></li>
+                    <li class="menu-item"><a href="/cadastrologin" class="menu-link"><i class="fas fa-id-card"></i> Cadastro Usuarios</a></li>
                     <li class="menu-item"><a href="/clientes" class="menu-link"><i class="fas fa-address-book"></i> Clientes</a></li>
-                    <li class="menu-item"><a href="/contato" class="menu-link"><i class="fas fa-envelope-open"></i> Contato</a></li>
                     <li class="menu-item"><a href="/orcamento" class="menu-link"><i class="fas fa-wallet"></i> Orçamento</a></li>
+                    <li class="menu-item"><a href="/conhecimento" class="menu-link"><i class="fas fa-book"></i> Conhecimento</a></li>
+                    <li class="menu-item"><a href="/contato" class="menu-link"><i class="fas fa-envelope-open"></i> Contato</a></li>
+                    <% if (user == null) { %>
+                        <% } else {%>
+                            <li class="menu-item"><a href="/logout" class="menu-link"><i class="fas fa-sign-in-alt"></i> LogOut</a></li>
+                            <% } %>
                 </ul>
             </nav>
         </aside>
-        <%-include(`${page}`)%>
-            <footer>
-                <div class="footer-content">
-                    <p>
-                        Copyright &copy; 2021, Rumos Soluções em TI Todos direitos reservados
-                    </p>
-                    <div class="social-list">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-github"></i></a></li>
-                            <li><a href="#"><i class="fab fa-discord"></i></a></li>
-                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
+        <% if (success_msg) {%>
+            <p class="success_msg">
+                <%= success_msg %>
+            </p>
+            <% } %>
+                <%-include(`${page}`)%>
+                    <footer>
+                        <div class="footer-content">
+                            <% if (user == null) { %>
+                                <p></p>
+                                <% } else {%>
+                                    <p class="logado">
+                                        <%= user.usuario %> :
+                                            <%= user.email %>
+                                    </p>
+                                    <% } %>
+                                        <p>
+                                            Copyright &copy; 2021, Rumos Soluções em TI Todos direitos reservados
+                                        </p>
+                                        <div class="social-list">
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-discord"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                            </ul>
+                                        </div>
+                        </div>
+                    </footer>
     </div>
 </body>
 <script src="/script.js"></script>
